@@ -18,7 +18,7 @@
     <h1 class="text-3xl font-bold"> $ 4500</h1>
     <p>available balance</p>
   </div>
-    <button class="btn">Log Out</button>
+    <button class="btn hover:bg-blue-400">Log Out</button>
 </nav>
  <!-- now i work at wellcome payooo section-->
 <section class="mt-10">
@@ -73,8 +73,47 @@
 
 </div>
 
+<!-- now i work add money section -->
 
-<!-- i stop here today -->
+<section>
+<h2>Add Money </h2>
+
+<div class="">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      
+      <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+        <div class="card-body">
+            <!--Here works in select -->
+            <legend>Select A Bank</legend>
+            <select class="select rounded-full">
+                <option class=" rounded-full" disabled selected>Select bank </option>
+                <option value="Bkash" >Bkash</option>
+                <option value="Nagad">Nagad</option>
+                <option value="Upay">Upay</option>
+                <option value="Rocket">Rocket</option>
+              </select>
+
+
+          <fieldset class="fieldset">
+            <label class="fieldset-label">Bank Account Number</label>
+            <input type="number" class="input  rounded-full" placeholder="Enter 11 digit account number" />
+            <label class="fieldset-label">Amount to Add</label>
+            <input type="number" class="input  rounded-full" placeholder="Add Amount to withdraw" />
+
+            <label class="fieldset-label">Pin Number</label>
+            <input type="password" class="input  rounded-full" placeholder="Enter 4 digit pin number" />
+           
+            <button class="btn btn-neutral bg-blue-600 mt-4 border-none rounded-full">Add Money</button>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
 
 </section>
 
