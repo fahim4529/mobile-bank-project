@@ -33,13 +33,13 @@
 
     <!-- 1st card -->
 
-<div class="box border p-4 cursor-pointer text-center rounded-sm">
-<img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
-<h3>Add Money</h3>
-
-</div>
+    <div id="add-money-box" class="box border p-4 cursor-pointer text-center rounded-sm">
+      <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
+      <h3>Add Money</h3>
+      
+      </div>
 <!-- 2nd  -->
-<div class="box border cursor-pointer p-4 text-center rounded-sm">
+<div id="cashout-box" class="box border cursor-pointer p-4 text-center rounded-sm">
     <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
     <h3>Cashout</h3>
     
@@ -75,7 +75,7 @@
 
 <!-- now i work add money section -->
 
-<section>
+<section id="add-money">
 <h2>Add Money </h2>
 
 <div class="">
@@ -118,17 +118,29 @@
 
 </section>
 
-    </header>
+<!-- here is cash out secton -->
+ <section id="cash-out">
+  <h3>Cash out</h3>
+  <fieldset class="fieldset">
+    <label class="fieldset-label">Bank Account Number</label>
+    <input type="number" class="input  rounded-full" placeholder="Enter 11 digit account number" />
+  
+    <label  class="fieldset-label">Amount to Add</label>
+    <input id="amount" type="number" class="input  rounded-full" placeholder="Add Amount to withdraw" />
+  
+    <label class="fieldset-label">Pin Number</label>
+    <input id="pin" type="password" class="input  rounded-full" placeholder="Enter 4 digit pin number" />
+   
+    <button id="add-money" class="btn btn-neutral bg-blue-600 mt-4 border-none rounded-full">Cash out</button>
+  </fieldset>
+   
+ </section>
 
-    <main>
 
-    </main>
-
-    <footer>
-
-    </footer>
+    
 
    </section>
    <script src=".//app/addMoney.js"></script>
+   <script src="./app/toggle.js"></script>
 </body>
 </html>
